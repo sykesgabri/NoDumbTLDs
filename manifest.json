@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "No Dumb TLDs",
+  "version": "1.0",
+  "description": "Prevents loading of webpages with Google's new .zip and .mov TLDs.",
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
