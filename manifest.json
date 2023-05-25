@@ -3,7 +3,11 @@
   "name": "No Dumb TLDs",
   "version": "1.0",
   "description": "Prevents loading of webpages with Google's new .zip and .mov TLDs.",
-  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "permissions": ["webRequest", "webRequestBlocking"],
+  "host_permissions": [
+    "*://*.zip/*",
+    "*://*.mov/*"
+  ]
   "background": {
     "scripts": ["background.js"]
   },
